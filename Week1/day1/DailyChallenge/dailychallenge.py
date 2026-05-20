@@ -12,7 +12,7 @@ nombre_depart = 0 # on définitune valeur de départ 0
 while terminer < taille : #On dit à la machine tant que terminer n'est pas encore égale ou supérieure à la taille que l'utilsateur à rentrer, il continue son exécution
     nombre_depart += nombre # a chaque tour de boucle, on addition le nombre de départ précédent et le nombre que l'utilisateur à rentrer 
     tableau.append(nombre_depart) #On ajoute chaque somme obtenue au tableau
-    terminer += 1 # On incrémente le nombre départ pour éviter une boucle infinit
+    terminer += 1 # On incrémente le nombre départ pour éviter une boucle infinie
 
 print(tableau)
 
