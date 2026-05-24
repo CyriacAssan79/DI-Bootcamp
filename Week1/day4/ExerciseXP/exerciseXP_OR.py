@@ -1,14 +1,16 @@
-#Partie I
+#Part I
+
+#Account class 
 class BankAccount :
     def __init__(self, balance,username, password):
         self.balance = balance
         self.username = username
         self.password = password
-        self.authenticated = False
+        self.authenticated = False #Verfy user authentification
 
     def deposit(self,money):
-        if self.authenticated :
-            if money > 0:
+        if self.authenticated : #User can deposit if it's connected (authenticated == Tue)
+            if money > 0: #We verify if amount of depot is superior that 0
                 self.balance += money
                 return self.balance
             else :
@@ -16,7 +18,7 @@ class BankAccount :
         else :
             raise Exception ('You are not connected')
     
-    def withdraw (self,money):
+    def withdraw (self,money): #This method verify if user is connected and money withdraw is inferior that balance, if it's ok, we can do the withdrawal
         if(self.authenticated):
             if money > 0:
                 if money <= self.balance :
