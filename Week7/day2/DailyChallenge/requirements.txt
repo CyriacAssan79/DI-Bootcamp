@@ -1,0 +1,6 @@
+streamlit>=1.36
+pinecone>=5.0
+pandas>=2.0
+requests>=2.31
+torch>=2.2
+transformers>=4.41
